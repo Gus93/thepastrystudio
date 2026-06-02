@@ -26,11 +26,11 @@
       radial-gradient(ellipse at 50% 0%,#fdf9f1 0%,var(--cream) 60%),
       var(--cream);
   }
-  h1,h2,.logo,.tagline{font-family:'Fraunces',serif}
+  h1,h2,h3,.logo,.tagline{font-family:'Fraunces',serif}
 
   .wrap{
     flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;padding:60px 7vw;max-width:760px;margin:0 auto;
+    text-align:center;padding:80px 7vw 60px;max-width:760px;margin:0 auto;
   }
   .logo{
     font-size:1.5rem;font-weight:600;color:var(--cocoa);letter-spacing:1px;
@@ -77,6 +77,17 @@
   .btn-ghost{background:#fff;color:var(--cocoa);border:2px solid #e4d2b6}
   .btn-ghost:hover{background:var(--cream-2)}
 
+  /* About */
+  .about{
+    background:var(--cream-2);
+    padding:70px 7vw;
+  }
+  .about-inner{max-width:680px;margin:0 auto;text-align:center}
+  .about h2{font-size:clamp(1.8rem,4vw,2.5rem);color:var(--cocoa);font-weight:600;margin-bottom:24px}
+  .about p{font-size:1.1rem;color:var(--ink);margin-bottom:18px;line-height:1.7}
+  .signature{font-family:'Fraunces',serif;font-style:italic;font-size:1.4rem;color:var(--caramel-dark);margin-top:30px;margin-bottom:4px}
+  .sig-role{font-size:.85rem;color:var(--cocoa-soft);letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+
   /* Footer */
   footer{
     text-align:center;padding:30px 7vw 40px;color:var(--cocoa-soft);font-size:.95rem;
@@ -91,7 +102,7 @@
 
 <main class="wrap">
   <div class="logo">The Pastry <span>Studio</span></div>
-  <span class="badge">Opening Soon · Martinsburg, WV</span>
+  <span class="badge">Coming Soon · Martinsburg, WV</span>
   <h1>Something <em>Sweet</em><br>Is Baking</h1>
   <p class="tagline">Freshly Baked, Beautifully Crafted</p>
   <p class="blurb">Small-batch artisan pastries, gourmet cupcakes, specialty cookies, and custom cakes — handcrafted in the studio and coming soon to the Eastern Panhandle.</p>
@@ -112,15 +123,25 @@
   </div>
 </main>
 
+<section class="about">
+  <div class="about-inner">
+    <h2>A Little About Us</h2>
+    <p>The Pastry Studio is a small-batch bakery rooted in the Eastern Panhandle, where every pastry is handcrafted to order. No factory lines, no shortcuts — just butter, patience, and a love for the craft.</p>
+    <p>From flaky morning pastries to showstopping custom cakes, each bake leaves the studio fresh, beautiful, and made just for you.</p>
+    <p class="signature">Autumn Jones</p>
+    <p class="sig-role">Pastry Chef &amp; Founder</p>
+  </div>
+</section>
+
 <footer>
   <div class="contact-line">
     <a href="tel:+13044339588">(304) 433-9588</a>
     <span class="sep">·</span>
     <a href="mailto:thepastrystudio02@gmail.com">thepastrystudio02@gmail.com</a>
     <span class="sep">·</span>
-    <a href="https://instagram.com/ThePastryStudioWV" target="_blank" rel="noopener">@ThePastryStudioWV</a>
+    <a href="https://instagram.com/ThePastryStudioWV" target="_blank" rel="noopener">@ThePastryStudiowv</a>
   </div>
-  <div>© 2026 The Pastry Studio · Martinsburg &amp; the Eastern Panhandle, WV</div>
+  <div>© 2026 The Pastry Studio · Martinsburg & the Eastern Panhandle, WV</div>
 </footer>
 </body>
 </html>
